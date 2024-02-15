@@ -1,0 +1,425 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+* 
+    box-sizing: border-box
+
+@font-face 
+    font-family: 'Poppins' 
+    src: url('../font/Poppins-Bold.ttf')
+    font-display: swap
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins' 
+    src: url('../font/Poppins-SemiBoldItalic.ttf')
+    font-display: swap
+    font-weight: semi-bold
+    font-style: italic
+
+@font-face 
+    font-family: 'Poppins' 
+    src: url('../font/Poppins-Medium.ttf')
+    font-display: swap
+    font-weight: medium
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins' 
+    src: url('../font/Poppins-Regular.ttf')
+    font-display: swap
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: 'Poppins' 
+    src: url('../font/Poppins-SemiBold.ttf')
+    font-display: swap
+    font-weight: semi-bold
+    font-style: normal
+
+$color-blue: #4270EC
+$color-grey: rgba(30, 28, 49, 0.6)
+$color-half-grey: rgba(0, 0, 0, 0.5)
+
+
+body
+    overflow-x: hidden
+    max-width: 1440px
+    max-height: 5228px
+    font-family: "Poppins"
+    font-weight: regular
+    line-height: 22px
+    font-size: 14px
+    margin: 0 auto
+    
+
+
+nav
+    display: flex
+    width: 1156px
+    padding: 49px 0 0 135px
+    justify-content: space-between
+    margin-bottom: 105.19px
+  
+.menu-link
+    ul
+        li
+            display: inline
+            margin-right: 41px
+            &:last-child
+                margin-right: 0
+            a
+                color: black
+                text-decoration: none
+                font-size: 14px
+            .home-buttom
+                font-weight: semi-bold
+                color: $color-blue
+
+main 
+    width: 1180px
+    padding-left: 135px
+
+.section-title    
+    font-size: 48px
+
+//buttons
+.button
+    font-size: 14px
+    font-weight: medium
+    color: #FFFFFF
+    text-align: center
+    border: none
+    border-radius: 12px
+    background-color: #4270EC
+    padding: 19px 37px
+
+.home-container
+    position: relative
+
+.home
+    display: inline-flex
+    justify-content: space-between
+    width: 1179px
+    &__wrapper-left
+        &_subtitle
+            padding-top: 72px
+            margin-bottom: 15px
+            font-size: 14px
+            font-weight: medium
+        &_title
+            font-size: 60px
+            margin-bottom: 63px
+            line-height: 76px
+            font-weight: semi-bold
+        &_text
+            font-size: 18px
+            line-height: 29px
+            margin-bottom: 62px
+            color: rgba(30, 28, 49, 0.6)
+    &__wrapper-right
+        margin-bottom: 110px
+        &_rectangle-one
+            margin-right: 20px
+
+.home__icons-box
+    display: flex
+    margin-bottom: 241px
+    &_item
+        display: flex
+        align-items: flex-start
+        width: 338px
+        margin-right: 75px
+        &:last-child
+            margin-right: 0
+    .icon_img
+        margin-right: 20px
+    span
+        font-size: 18px
+        font-weight: medium
+        color: black
+    p
+        font-size: 14px
+        color: $color-grey
+    .pen
+        padding: 18.5px 15.15px 18.49px 16.24px
+        border-radius: 17px
+        background-color: #F0BB1F
+    .vector
+        padding: 22px 20px 22px 20px 
+        border-radius: 17px
+        background-color: #006380
+
+.about-us
+    display: flex
+    margin-bottom: 219px
+    overflow: hidden
+    &__left-wrapper
+        margin-right: 99px
+    &__right-wrapper
+        max-width: 498px
+        &_subtitle
+            font-weight: medium
+            padding-top: 30px
+            margin-bottom: 25px
+        &_title
+            font-weight: semi-bold
+            line-height: 61px
+            margin-bottom: 55px
+        &_text
+            color: $color-half-grey
+            line-height: 25px
+            margin-bottom: 53px
+    
+.portfolio
+    margin-bottom: 219px
+    &__main-text
+        display: flex
+        position: relative
+        margin-bottom: 104px
+        &_titles
+            font-weight: semi-bold
+            line-height: 61px
+            margin-right: -29px
+            .portfolio-subtitles
+                font-weight: medium
+                margin-bottom: -10px
+        &_information
+            position: absolute
+            top: 13px
+            right: -130px
+            
+            .portfolio-text-informaion
+                color: $color-half-grey
+                max-width: 526px
+                margin-bottom: 17px
+            .potfolio-information-link
+                color: #4270EC
+    &__card-box
+        display: flex
+        &_img
+            margin-right: 40px
+            &:last-child
+                margin-right: 0px
+
+//blue arrow in item-box
+.card-box
+    position: relative
+    .card-box__arrow
+        position: absolute
+        bottom: 31px
+        right: 28px
+        color: #4270EC
+        font-size: 40px
+        background-color: white
+        padding: 6px
+        border-radius: 50px
+
+.testimony
+    position: relative
+    text-align: center
+    max-width: 961px
+    margin-bottom: 197px
+    &__subtitle
+        font-weight: medium
+        margin-bottom: 15px
+    &__title
+        font-weight: semi-bold
+        line-height: 61px
+        margin-bottom: 283px
+    &__elipse-photo
+        position: absolute
+        top: 270px
+        left: 432px
+        width: 117px
+        height: 117px
+        border-radius: 100px
+        background-color: white
+        position: absolute
+
+    &__photo-client-1
+        position: absolute
+        top: 278px
+        left: 436px
+    &__photo-client-2
+        position: absolute
+        top: 188px
+        left: 0px
+    &__photo-client-3
+        position: absolute
+        top: 358px
+        left: 112px
+    &__photo-client-4
+        position: absolute
+        top: 543px
+        left: 30px
+    &__photo-client-5
+        position: absolute
+        top: 187px
+        right: 0px
+        box-shadow: 1px black
+    &__photo-client-6
+        position: absolute
+        top: 333px
+        right: 99px
+    &__photo-client-7
+        position: absolute
+        top: 534px
+        right: 14px
+    &__text
+        max-width: 449px
+        margin: 0 auto
+        margin-bottom: 26px
+    &__another-text
+        margin-bottom: 49px
+
+.blog
+    max-width: 1161px
+    &__title
+        text-align: center
+        font-weight: semi-bold
+        margin-bottom: 93px
+        &_subtitle
+            font-weight: medium
+            margin-bottom: 17px
+    &__cards-item
+        display: flex
+        justify-content: space-between
+        margin-bottom: 166px
+        img
+            margin-bottom: 29px
+        .text-box
+            max-width: 289px
+            padding-left: 21px
+            &__data-text
+                font-size: 12px
+                font-weight: medium
+                color: $color-grey
+                margin-bottom: 14px
+            &__item_text
+                margin-bottom: 17px
+            &__link-text
+                text-decoration: none
+                color: #4270EC
+
+.baner
+    position: relative
+    width: 1160px
+    height: 300px
+    border-radius: 30px
+    background: linear-gradient(79.42deg, #527FF6 15.73%, #E16DD9 79.76%, #FFCC70 112.35%)
+    margin-bottom: 160px
+    &__title
+        position: absolute
+        font-size: 40px
+        line-height: 51px
+        font-weight: semi-bold
+        color: rgba(255, 255, 255, 1)
+        top: 100px
+        left: 211px 
+    &__button
+        position: absolute
+        top: 125px
+        left: 787px
+        width: 164px
+        height: 49px
+        font-weight: semi-bold
+        color: rgba(66, 112, 236, 1)
+        background-color: rgba(255, 255, 255, 1)
+        border-radius: 12px
+        border: 0
+
+.info
+    display: flex
+    position: relative
+    max-width: 1158px
+    height: 390px
+    &__geometry-figure
+        font-size: 28px
+        padding-top: 7px
+        margin-right: 148.91px
+    &__our-contacts
+        width: 227px
+        margin-right: 115px
+        &_title
+            font-size: 18px
+            margin-bottom: 32px
+        &_text
+            line-height: 24px
+            color: rgba(34, 33, 54, 0.7)
+    &__about-us
+        width: 201px
+        margin-right: 122px
+    &__subscribe
+        &_title
+            margin-bottom: 16px
+            font-weight: medium
+        input
+            width: 280px
+            height: 40px
+            background-color: #ECF0FC
+            border: 0
+            border-radius: 9px 
+            margin-bottom: 27px
+        &_foolow-us
+            margin-bottom: 13px
+        .social-icons
+            display: flex  
+            img
+                margin-right: 18px
+
+
+//elipse paint
+.elips-big
+    width: 599px
+    height: 543px
+    border-radius: 100%
+    filter: blur(1.5rem)
+    background: linear-gradient(49.08deg, rgba(229, 175, 225, 0.5) 3.31%, rgba(200, 80, 192, 0.5) 57.52%, rgba(255, 204, 112, 0.5) 91.12%)
+    bbox-shadow: 12px 12px 20px 10px rgba(0, 0, 255, .2)    
+.second-elips
+    width: 599px
+    height: 543px
+    border-radius: 100%
+    border: 0.1px solid #C5B5C4
+    box-shadow: 1px 1px 5px #C5B5C4
+.small-elipse
+    border-radius: 100%
+    width: 266px
+    height: 266px
+    filter: blur(70px)
+    background: linear-gradient(49.08deg, rgba(229, 175, 225, 0.5) 3.31%, rgba(200, 80, 192, 0.5) 57.52%, rgba(255, 204, 112, 0.5) 91.12%)
+
+//elips coordinate
+.first-elips
+    position: absolute
+    top: -261px
+    left: -332px
+    z-index: -1
+.elips-grey
+    position: absolute
+    top: -261px
+    left: -332px
+    z-index: -2
+.first-elips-two
+    position: absolute
+    top: 1473px
+    right: -327px
+    z-index: -1  
+.elips-grey-two
+    position: absolute
+    top: 1473px
+    right: -327px
+    z-index: -2
+.ellipse-position
+    position: absolute
+    top: 265px
+    left: 353px
+    z-index: -1
+.ellipse-position-two
+    position: absolute
+    bottom: 43px
+    left: -287px
+    z-index: -1
